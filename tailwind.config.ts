@@ -12,8 +12,7 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-    },
+    extend: {},
   },
   plugins: [daisyui],
   daisyui: {
@@ -21,21 +20,20 @@ export default {
       {
         light: {
           ...lightDefault,
-          background: "linear-gradient(to bottom, #EAEAEA, #D7D7D7)",
-          primary: "#1B0788",
+          background: "linear-gradient(270deg, #EAEAEA, #d4d4d4, #bfdee4)",
+          primary: "#4330ab",
           secondary: "#B9B9B9",
           "hover-work": "black",
           "neutral-content": "black",
-          "bg-secondary": "rgb(30 41 59 / var(--tw-bg-opacity))"
+          accent: "#4330ab",
         },
         dark: {
           ...darkDefault,
           "base-content": "#ffffff",
-          background: "linear-gradient(to bottom, #07031b, #140c41)",
+          background: "linear-gradient(270deg, #07031b, #382E73, #261489, #140c41)",
           primary: "#0A5F68",
-          secondary: "#4AB2BD",
-          "bg-secondary": "rgb(30 41 59 / var(--tw-bg-opacity))",
-          "neutral-content": "rgb(226 232 240)"
+          secondary: "rgb(30 41 59)",
+          "neutral-content": "rgb(226 232 240)",
         },
       },
     ],

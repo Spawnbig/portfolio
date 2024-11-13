@@ -1,9 +1,10 @@
 import { HeaderComponent, SocialsComponent, WorkComponent } from "@/components";
+import ProjectsComponent from "@/components/projects";
 import { WorkData } from "@/constants";
 
 export default function Home() {
   return (
-    <div className="min-h-screen py-16">
+    <main className="min-h-screen py-16 animated-background flex flex-col gap-12">
       <HeaderComponent />
       <section className="flex flex-col mt-20 gap-8">
         <h1 id="about" className="text-4xl font-bold ">
@@ -15,16 +16,16 @@ export default function Home() {
         <SocialsComponent />
       </section>
       <section className="gap-7">
-        <h3 className="text-lg font-medium mt-6">Sobre mi</h3>
-        <p>
+        <h3 className="text-lg font-medium my-6">Sobre mi</h3>
+        <p className="text-sm">
           Ingeniero Informático, especializado en el desarrollo de aplicaciones
           web. Mi experiencia laboral abarca desde el frontend hasta el backend,
           utilizando tecnologías modernas como Next.js, Angular, NestJS y React
           Native con Expo. Me apasiona enfrentar desafíos técnicos y explorar
-          continuamente nuevas tecnologías para aportar soluciones innovadoras
+          continuamente nuevas tecnologías para aportar soluciones innovadoras.
         </p>
         &nbsp;
-        <p>
+        <p className="text-sm">
           He trabajado en proyectos que no solo cumplen con los requisitos
           técnicos, sino que también ofrecen una experiencia de usuario
           intuitiva y atractiva. Prefiero desarrollar aplicaciones que puedan
@@ -34,7 +35,7 @@ export default function Home() {
           motiva mantener un enfoque constante en la mejora continua.
         </p>
         &nbsp;
-        <p>
+        <p className="text-sm">
           Estoy comprometido con el aprendizaje continuo, el autoaprendizaje y
           la innovación en cada proyecto que desarrollo. Mi objetivo es seguir
           creciendo profesionalmente y contribuir a la creación de productos
@@ -52,6 +53,23 @@ export default function Home() {
           ))}
         </ol>
       </section>
-    </div>
+      <section id="projects" className="gap-12 w-full grid">
+        <h3 className="text-lg font-medium my-6">Otros Proyectos</h3>
+        <ProjectsComponent />
+      </section>
+      <footer className="justify-center gap-5 mt-10 text-neutral-500 text-sm">
+        <p>
+          Página Web diseñada con la herramienta Figma e implementada a través
+          de Next.js y TailwindCSS. Para el despliegue se ha utilizado Vercel.
+        </p>
+        &nbsp;
+        <p>
+          Puedes acceder al repositorio a través del siguiente enlace{" "}
+          <a href="https://github.com/Spawnbig/portfolio" target="_blank">
+            <span className="text-white">AQUI</span>
+          </a>
+        </p>
+      </footer>
+    </main>
   );
 }
