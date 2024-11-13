@@ -1,0 +1,31 @@
+.toggle_icon {
+  appearance: none;
+  background-color: #f0f0f0;
+  position: relative;
+  border-radius: 9999px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.toggle_icon:checked {
+  background-color: #140c41;
+}
+
+.toggle_icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  width: 16px;
+  height: 16px;
+  background-image: url("/icons/moon.svg");;
+  background-size: cover;
+  transform: translateY(-50%);
+  transition: left 0.1s ease, background-image 0.1s ease;
+}
+
+.toggle_icon:checked::before {
+  left: 63%;
+  background-image: url("/icons/sun.svg");
+}
