@@ -4,7 +4,7 @@ import { WorkData } from "@/constants";
 
 export default function Home() {
   return (
-    <main className="min-h-screen py-16 animated-background grid gap-12">
+    <main className="min-h-screen py-16 animated-background flex flex-col gap-12">
       <HeaderComponent />
       <section className="flex flex-col mt-20 gap-8">
         <h1 id="about" className="text-4xl font-bold ">
@@ -53,17 +53,16 @@ export default function Home() {
           ))}
         </ol>
       </section>
-      <section id="projects" className="gap-12">
-        <h3 className="text-lg font-medium my-6">
-          Otros Proyectos
-        </h3>
+      <section id="projects" className="gap-12 w-full grid">
+        <h3 className="text-lg font-medium my-6">Otros Proyectos</h3>
         <ProjectsComponent />
       </section>
       <footer className="justify-center gap-5 mt-10 text-neutral-500 text-sm">
         <p>
-          Página Web diseñada con la herramienta Figma e implementada a
-          través de Next.js y TailwindCSS. Para el despliegue se ha utilizado Vercel.
+          Página Web diseñada con la herramienta Figma e implementada a través
+          de Next.js y TailwindCSS. Para el despliegue se ha utilizado Vercel.
         </p>
+        &nbsp;
         <p>
           Puedes acceder al repositorio a través del siguiente enlace{" "}
           <a href="https://github.com/Spawnbig/portfolio" target="_blank">

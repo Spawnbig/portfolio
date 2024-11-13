@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const ProjectsComponent = () => {
   return (
-    <div className="grid grid-cols-2 gap-5">
+    <div className="2xl:grid 2xl:grid-cols-2 flex flex-col justify-center items-center gap-5">
       {ProjectsData.map(({ image, name, description, keywords, url }) => (
         <div
           key={name}
@@ -22,7 +22,7 @@ const ProjectsComponent = () => {
             </a>
           </h4>
           <p>{description}</p>
-          <div className="flex gap-2 justify-center">
+          <div className="flex gap-2 justify-center flex-wrap">
             {keywords.map((keyword) => (
               <span
                 key={keyword}

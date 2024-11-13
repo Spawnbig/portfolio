@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="es" data-theme="dark" className="background-animate">
       <body
-        className={`${interFont.className} mx-auto w-full gap-10 flex md:w-3/5 relative`}
+        className={`${interFont.className} mx-auto w-full px-5 md:gap-10 flex xl:w-3/5 lg:w-4/5 relative`}
       >
         <Providers>
           <NavbarComponent />
