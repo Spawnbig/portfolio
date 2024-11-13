@@ -20,7 +20,7 @@ export default {
       {
         light: {
           ...lightDefault,
-          background: "linear-gradient(to bottom, #EAEAEA, #D7D7D7)",
+          background: "linear-gradient(270deg, #EAEAEA, #d4d4d4, #bfdee4)",
           primary: "#4330ab",
           secondary: "#B9B9B9",
           "hover-work": "black",

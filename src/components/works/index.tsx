@@ -15,7 +15,7 @@ const WorkComponent = ({ date, title, description, tags }: Props) => {
           {tags.map((tag) => (
             <span
               key={tag}
-              className="bg-primary px-2 py-1 rounded-full text-white"
+              className="bg-primary px-2 py-1 rounded-full text-white text-sm"
             >
               {tag}
             </span>

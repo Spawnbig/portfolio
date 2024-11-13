@@ -11,7 +11,7 @@ export const ThemeProvider = ({
 }: Readonly<{
   children: React.ReactNode;
 }>) => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("isDarkMode");
