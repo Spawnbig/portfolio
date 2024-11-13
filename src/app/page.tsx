@@ -3,7 +3,7 @@ import { WorkData } from "@/constants";
 
 export default function Home() {
   return (
-    <div className="min-h-screen py-16">
+    <div className="min-h-screen py-16 animated-background">
       <HeaderComponent />
       <section className="flex flex-col mt-20 gap-8">
         <h1 id="about" className="text-4xl font-bold ">
@@ -15,16 +15,16 @@ export default function Home() {
         <SocialsComponent />
       </section>
       <section className="gap-7">
-        <h3 className="text-lg font-medium mt-6">Sobre mi</h3>
-        <p>
+        <h3 className="text-lg font-medium my-6">Sobre mi</h3>
+        <p className="text-sm">
           Ingeniero Informático, especializado en el desarrollo de aplicaciones
           web. Mi experiencia laboral abarca desde el frontend hasta el backend,
           utilizando tecnologías modernas como Next.js, Angular, NestJS y React
           Native con Expo. Me apasiona enfrentar desafíos técnicos y explorar
-          continuamente nuevas tecnologías para aportar soluciones innovadoras
+          continuamente nuevas tecnologías para aportar soluciones innovadoras.
         </p>
         &nbsp;
-        <p>
+        <p className="text-sm">
           He trabajado en proyectos que no solo cumplen con los requisitos
           técnicos, sino que también ofrecen una experiencia de usuario
           intuitiva y atractiva. Prefiero desarrollar aplicaciones que puedan
@@ -34,7 +34,7 @@ export default function Home() {
           motiva mantener un enfoque constante en la mejora continua.
         </p>
         &nbsp;
-        <p>
+        <p className="text-sm">
           Estoy comprometido con el aprendizaje continuo, el autoaprendizaje y
           la innovación en cada proyecto que desarrollo. Mi objetivo es seguir
           creciendo profesionalmente y contribuir a la creación de productos
@@ -51,6 +51,11 @@ export default function Home() {
             <WorkComponent key={index} {...work} />
           ))}
         </ol>
+      </section>
+      <section>
+        <h3 id="projects" className="text-lg font-medium mt-6">
+          Otros Proyectos
+        </h3>
       </section>
     </div>
   );

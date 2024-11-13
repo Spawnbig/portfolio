@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" data-theme="dark">
+    <html lang="es" data-theme="dark" className="background-animate">
       <body
         className={`${interFont.className} mx-auto w-full gap-10 flex md:w-3/5 relative`}
       >
