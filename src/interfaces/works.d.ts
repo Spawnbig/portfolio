@@ -3,4 +3,6 @@ export interface Works {
   title: string;
   description: string;
   tags: string[];
+  at: string;
+  url?: string;
 }
