@@ -7,7 +7,7 @@ const ProjectsComponent = () => {
       {ProjectsData.map(({ image, name, description, keywords, url }) => (
         <div
           key={name}
-          className="class relative bg-secondary rounded-xl text-center items-center p-5 text-sm bg-opacity-50 gap-5"
+          className="group flex flex-col relative gap-2 bg-secondary rounded-xl text-center items-center p-5 text-sm bg-opacity-50 transition transform duration-300 md:hover:scale-110"
         >
           <Image
             src={image}
@@ -16,8 +16,8 @@ const ProjectsComponent = () => {
             width={100}
             className="mx-auto max-h-24"
           />
-          <h4 className="font-semibold text-lg underline hover:cursor-pointer">
-            <a href={url} target="_blank">
+          <h4 className="font-semibold text-lg underline">
+            <a href={url} target="_blank" rel="noopener noreferrer">
               {name}
             </a>
           </h4>

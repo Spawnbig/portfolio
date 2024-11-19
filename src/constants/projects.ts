@@ -6,7 +6,7 @@ const ProjectsData: Projects[] = [
     name: "RutaFronteRA",
     url: "https://rutafrontera.innovalabufro.cl/",
     description:
-      "Aplicación de Realidad Aumentada desarrollada para el Instituo del Medio Ambiente de la Universidad de la FronteRA",
+      "Aplicación de Realidad Aumentada desarrollada para el Instituo del Medio Ambiente de la Universidad de la Frontera",
     keywords: ["Unity", "Next.JS", "C++", "NestJS"],
   },
   {
