@@ -2,7 +2,45 @@ import { Works } from "@/interfaces/works";
 
 const WorkData: Works[] = [
   {
-    date: "Abril 2023 - Actualidad",
+    date: "Marzo 2025 - Actualidad",
+    description:
+      "Participación en proyectos para sector financiero y caja de compensaciones chilena, además de apoyo en propuestas para industria retail y sector automotriz. Desarrollo de flujos frontend y backend para integración con servicios de Figma, incluyendo autenticación OAuth para consumo seguro de APIs externas. Implementación de lógica backend para orquestación de flujos y validaciones de negocio con NestJS. Participación en decisiones de arquitectura, definición de microservicios, diseño de APIs y estrategias de integración. Apoyo en elaboración de propuestas técnicas con soluciones basadas en Inteligencia Artificial.",
+    tags: [
+      "NestJS",
+      "React",
+      "Angular",
+      "TypeScript",
+      "OAuth",
+      "Azure",
+      "Storybook",
+      "Agentes IA",
+      "Microservicios",
+      "Docker",
+    ],
+    title: "Desarrollador Fullstack",
+    at: "Deloitte",
+  },
+  {
+    date: "Diciembre 2024 - Marzo 2025",
+    description:
+      "Desarrollo de plataforma para caja de compensaciones chilena, de alto tráfico y uso masivo. Implementación de CMS utilizando Strapi para administración de contenidos. Desarrollo frontend con React y manejo de estado con Redux. Desarrollo de microservicios backend con NestJS para funcionalidades críticas como canje y gestión de beneficios. Dockerización de servicios y despliegue en Kubernetes sobre GCP. Implementación de pipelines CI/CD en Bitbucket.",
+    tags: [
+      "React",
+      "Redux",
+      "NestJS",
+      "TypeScript",
+      "Strapi",
+      "Docker",
+      "Kubernetes",
+      "GCP",
+      "Bitbucket CI/CD",
+      "Agentes IA",
+    ],
+    title: "Desarrollador Fullstack",
+    at: "TCIT",
+  },
+  {
+    date: "Abril 2023 - Noviembre 2024",
     description:
       "Desarrollo de un dashboard interactivo con Next.js, incorporando gráficos avanzados para la visualización dinámica de datos. Experiencia en la implementación de soluciones basadas en inteligencia artificial mediante Gemini y OpenAI, aplicadas a la resolución de problemas de negocio. Creación e integración de modelos clasificadores de imágenes, enfocados en ofrecer soluciones efectivas en contextos del negocio.",
     tags: [

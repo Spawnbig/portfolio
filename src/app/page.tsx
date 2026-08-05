@@ -1,6 +1,11 @@
-import { HeaderComponent, SocialsComponent, WorkComponent } from "@/components";
+import {
+  HeaderComponent,
+  SocialsComponent,
+  WorkComponent,
+  CertificationComponent,
+} from "@/components";
 import ProjectsComponent from "@/components/projects";
-import { WorkData } from "@/constants";
+import { WorkData, CertificationsData } from "@/constants";
 
 export default function Home() {
   return (
@@ -50,6 +55,16 @@ export default function Home() {
         <ol>
           {WorkData.map((work, index) => (
             <WorkComponent key={index} {...work} />
+          ))}
+        </ol>
+      </section>
+      <section className="grid mt-5 gap-5">
+        <h3 id="certifications" className="text-lg font-medium">
+          Certificaciones
+        </h3>
+        <ol>
+          {CertificationsData.map((cert, index) => (
+            <CertificationComponent key={index} {...cert} />
           ))}
         </ol>
       </section>
