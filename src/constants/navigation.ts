@@ -10,6 +10,10 @@ const NavigationData: Navigation[] = [
     href: "#experience",
   },
   {
+    name: "Certificaciones",
+    href: "#certifications",
+  },
+  {
     name: "Proyectos",
     href: "#projects",
   },

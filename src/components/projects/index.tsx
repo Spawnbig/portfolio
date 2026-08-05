@@ -7,14 +7,14 @@ const ProjectsComponent = () => {
       {ProjectsData.map(({ image, name, description, keywords, url }) => (
         <div
           key={name}
-          className="group flex flex-col relative gap-2 bg-secondary rounded-xl text-center items-center p-5 text-sm bg-opacity-50 transition transform duration-300 md:hover:scale-110"
+          className="group flex flex-col relative gap-2 bg-secondary/20 backdrop-blur-sm border border-base-content/10 rounded-xl text-center items-center p-5 text-sm transition transform duration-300 md:hover:scale-105"
         >
           <Image
             src={image}
             alt={name}
             height={150}
             width={100}
-            className="mx-auto max-h-24"
+            className="mx-auto max-h-24 w-auto"
           />
           <h4 className="font-semibold text-lg underline">
             <a href={url} target="_blank" rel="noopener noreferrer">

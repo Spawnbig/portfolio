@@ -11,7 +11,7 @@ const HeaderComponent = () => {
         type="checkbox"
         className={`toggle toggle-lg ${styles.toggle_icon}`}
         onChange={toggleTheme}
-        checked={!isDarkMode}
+        checked={isDarkMode}
       />
     </header>
   );

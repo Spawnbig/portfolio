@@ -2,9 +2,47 @@ import { Works } from "@/interfaces/works";
 
 const WorkData: Works[] = [
   {
-    date: "Abril 2023 - Actualidad",
+    date: "Marzo 2025 - Actualidad",
     description:
-      "Desarrollo de un dashboard interactivo con Next.js, incorporando gráficos avanzados para la visualización dinámica de datos. Experiencia en la implementación de soluciones basadas en inteligencia artificial mediante Gemini y OpenAI, aplicadas a la resolución de problemas de negocio. Creación e integración de modelos clasificadores de imágenes, enfocados en ofrecer soluciones efectivas en contextos del negocio.",
+      "• Proyectos para sector financiero, caja de compensaciones chilena y propuestas para retail y automotriz\n• Integración con APIs de Figma mediante autenticación OAuth para consumo seguro de servicios externos\n• Orquestación de flujos y validaciones de negocio con NestJS en arquitectura de microservicios\n• Participación en decisiones de arquitectura, diseño de APIs y estrategias de integración\n• Elaboración de propuestas técnicas con soluciones basadas en Inteligencia Artificial",
+    tags: [
+      "NestJS",
+      "React",
+      "Angular",
+      "TypeScript",
+      "OAuth",
+      "Azure",
+      "Storybook",
+      "Agentes IA",
+      "Microservicios",
+      "Docker",
+    ],
+    title: "Desarrollador Fullstack",
+    at: "Deloitte",
+  },
+  {
+    date: "Diciembre 2024 - Marzo 2025",
+    description:
+      "• Desarrollo de plataforma de alto tráfico para caja de compensaciones chilena con uso masivo\n• Implementación de CMS con Strapi para administración de contenidos\n• Frontend con React y manejo de estado con Redux para interfaces dinámicas\n• Microservicios backend con NestJS para canje y gestión de beneficios\n• Dockerización de servicios y despliegue en Kubernetes sobre GCP\n• Pipelines CI/CD en Bitbucket para integración y entrega continua",
+    tags: [
+      "React",
+      "Redux",
+      "NestJS",
+      "TypeScript",
+      "Strapi",
+      "Docker",
+      "Kubernetes",
+      "GCP",
+      "Bitbucket CI/CD",
+      "Agentes IA",
+    ],
+    title: "Desarrollador Fullstack",
+    at: "TCIT",
+  },
+  {
+    date: "Abril 2023 - Noviembre 2024",
+    description:
+      "• Dashboard interactivo con Next.js y gráficos avanzados para visualización dinámica de datos\n• Implementación de soluciones de IA con Gemini y OpenAI aplicadas a problemas de negocio\n• Creación e integración de modelos clasificadores de imágenes para contextos del negocio",
     tags: [
       "Next.js",
       "React",
@@ -23,7 +61,7 @@ const WorkData: Works[] = [
   {
     date: "Septiembre 2023 - Noviembre 2024",
     description:
-      "Desarrollo de una plataforma para el seguimiento de casos clínicos, abarcando desde la solicitud de atención hasta la gestión de horarios e encriptación de información crítica. Experiencia en la toma de requerimientos y diseño arquitectónico para soluciones escalables y eficientes. Implementación del backend utilizando NestJS, Desarrollo del frontend con Angular 16, proporcionando interfaces de usuario intuitivas y responsivas. Desarrollo de pruebas E2E con Cypress para garantizar el correcto funcionamiento de la plataforma previo al despliegue.",
+      "• Plataforma de seguimiento de casos clínicos: desde solicitud de atención hasta gestión de horarios y encriptación de información crítica\n• Toma de requerimientos y diseño arquitectónico para soluciones escalables\n• Backend con NestJS y frontend con Angular 16, con interfaces intuitivas y responsivas\n• Pruebas E2E con Cypress para garantizar calidad previo al despliegue",
     tags: [
       "Angular 16",
       "NestJS",
@@ -42,7 +80,7 @@ const WorkData: Works[] = [
   {
     date: "Junio 2023 - Agosto 2023",
     description:
-      "Desarrollo de una plataforma web autogestionable para la Universidad Católica de Temuco, facilitando la gestión eficiente de recursos y procesos institucionales. Implementación del backend utilizando Express y MongoDB como base de datos. Despliegue automatizado a través de CI/CD con GitLab, mejorando el flujo de integración y entrega continua.",
+      "• Plataforma web autogestionable para la Universidad Católica de Temuco, optimizando gestión de recursos y procesos institucionales\n• Backend con Express y MongoDB para almacenamiento flexible y escalable\n• Despliegue automatizado con CI/CD en GitLab, mejorando integración y entrega continua",
     tags: ["Express", "TypeScript", "MongoDB", "Gitlab CI/CD", "NextJS", "TailwindCSS"],
     title: "Desarrollador Fullstack",
     at: "Forcs",
