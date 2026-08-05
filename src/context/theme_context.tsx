@@ -17,6 +17,11 @@ export const ThemeProvider = ({
     const storedTheme = localStorage.getItem("isDarkMode");
     if (storedTheme) {
       setIsDarkMode(storedTheme === "dark");
+    } else {
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      setIsDarkMode(prefersDark);
     }
   }, []);
 

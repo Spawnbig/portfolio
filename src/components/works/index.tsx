@@ -10,7 +10,7 @@ const WorkComponent = ({ date, title, description, tags, at, url }: Props) => {
         {date}
       </div>
       <div className="grid gap-5 w-2/3">
-        <a href={url} target="_blank">
+        <a href={url} target="_blank" rel="noopener noreferrer">
           <h4 className="text-lg font-bold lg:group-hover:text-accent inline-flex items-center">
             {title} | {at}{" "}
             {url && (

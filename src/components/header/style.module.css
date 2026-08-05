@@ -1,6 +1,6 @@
 .toggle_icon {
   appearance: none;
-  background-color: #f0f0f0;
+  background-color: var(--b3);
   position: relative;
   border-radius: 9999px;
   cursor: pointer;
@@ -9,7 +9,7 @@
 }
 
 .toggle_icon:checked {
-  background-color: #140c41;
+  background-color: var(--p);
 }
 
 .toggle_icon::before {
@@ -19,7 +19,7 @@
   left: 12%;
   width: 16px;
   height: 16px;
-  background-image: url("/icons/moon.svg");;
+  background-image: url("/icons/sun.svg");
   background-size: cover;
   transform: translateY(-50%);
   transition: left 0.1s ease, background-image 0.1s ease;
@@ -27,5 +27,5 @@
 
 .toggle_icon:checked::before {
   left: 63%;
-  background-image: url("/icons/sun.svg");
+  background-image: url("/icons/moon.svg");
 }

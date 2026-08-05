@@ -22,7 +22,7 @@ export default {
           ...lightDefault,
           background: "linear-gradient(270deg, #EAEAEA, #d4d4d4, #bfdee4)",
           primary: "#4330ab",
-          secondary: "#B9B9B9",
+          secondary: "#9CA3AF",
           "hover-work": "black",
           "neutral-content": "black",
           accent: "#4330ab",

@@ -7,7 +7,7 @@ const NavbarComponent = () => {
   const activeSection = useGetCurrentTitle();
 
   return (
-    <aside className="max-h-screen md:flex items-center me-56 w-40 hidden">
+    <aside className="max-h-screen md:flex items-center me-44 w-40 hidden">
       <nav className="fixed">
         <ul>
           {NavigationData.map(({ href, name }) => (
