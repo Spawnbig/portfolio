@@ -14,7 +14,7 @@ const ProjectsComponent = () => {
             alt={name}
             height={150}
             width={100}
-            className="mx-auto max-h-24"
+            className="mx-auto max-h-24 w-auto"
           />
           <h4 className="font-semibold text-lg underline">
             <a href={url} target="_blank" rel="noopener noreferrer">

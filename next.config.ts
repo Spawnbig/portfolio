@@ -1,28 +1,29 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  webpack(config){
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: [
-        {
-          loader: "@svgr/webpack",
-          options: {
-            svgo: true,
-            svgoConfig: {
-              plugins: [
-                {
-                  name: "removeAttrs",
-                  params: { attrs: "(fill|stroke)" },
-                },
-              ],
+  turbopack: {
+    rules: {
+      '*.svg': {
+        loaders: [
+          {
+            loader: '@svgr/webpack',
+            options: {
+              svgo: true,
+              svgoConfig: {
+                plugins: [
+                  {
+                    name: 'removeAttrs',
+                    params: { attrs: '(fill|stroke)' },
+                  },
+                ],
+              },
             },
           },
-        },
-      ],
-    });
-    return config;
-  }
+        ],
+        as: '*.js',
+      },
+    },
+  },
 };
 
 export default nextConfig;
